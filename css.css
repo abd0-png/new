@@ -1,0 +1,191 @@
+  /* ------------------------- PART ONE ----------------------  */
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #001;
+    display: flex;    /* MAKE (PART ONE + PART TOW) IN SAME LINE */
+}
+
+
+
+/* WORK ON PHOTO */
+
+.img-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;                /* MAKE IT CIRCLE*/
+    overflow: hidden;                  /* HIDE ANY THING OUT OF BORDER*/
+    border: 3px solid white;         /* BORDER OF PHOTO*/
+    flex-shrink: 0;                    /* PREVENT IT FORM SHRINKING */
+}
+img{
+    width: 100%;  /* 100% OF HIS FATHER (img-box)*/
+}
+
+.profile{                   /* WORK ON BOTH NAME AND PHOTO*/
+    display: flex;          /* (profile) has (PHOTO AND NAME) AND IN ONE LINE */
+    align-items: center;    /* BOTH IN CENTER */
+    gap: 30px;              /* SPACE BETWEEN THEM */
+}
+
+.profile h2 {               /* WORK ON NAME ONLY*/
+            font-size: 16px;
+            text-transform: capitalize;      /* FIRST LITTER OF EACH WORD => CAPITAL*/
+            /* (capitalize) => ONLY FISR LETTER | (uppercase) => ALL THE WORD */
+
+        }
+
+.menu{   /* WORK ON WHOLE MENU (NAME - PHOTO - LISTES)*/
+    background-color: darkslategray;
+    color: white;
+    width: 50px;
+    height: 100vh;       /* (vh) => AS SCREEN HEIGHT */
+    padding: 20px;
+    overflow: hidden;  /* HIDE THE REST OF CONTANT WHICH IS OUT OF REANG*/
+    transition: 0.5s;
+}
+
+.menu:hover{      /* WHEN I TOUCH*/
+    width: 260px;
+    overflow: visible;  /* HIDE THE REST OF CONTANT WHICH IS OUT OF REANG*/
+
+}
+
+
+
+ul{  /* WORK ON LISTS ONLY*/
+    list-style: none;             /* HIDE THE POINTS*/
+    position: relative; /* MAKE (log-out) RELATED TO IT)*/
+    height: 90%; /* MAKE IT HEIGHT RELATED TO (div)*/
+
+}
+
+ul li a{                /* SPAPCAFIC ON (LINKS) TO MAKE THEM ALL THE EREA*/
+    display: block;     /* INLINE => BLOCK*/
+    text-decoration: none;   /* HIDE UNDERLING LINK*/
+    padding: 10px;
+    margin: 10px 0;    /* MAKE SPACE BETWEEN THEM*/
+    border-radius: 8px;
+    display: flex;
+    align-items: center;  /* MAKE (link) (icon) IN THE SAME LINE */
+    gap: 40px ;            /* SPACE BETWEEN THE TOW OF (a)*/
+    transition: 0.5s;
+} 
+ul li a:hover,  .box:hover ,td:hover {                /* WHEN I PRESS*/
+ background-color: rgba(255, 255, 255, 0.425);}
+
+ .a1{
+ background-color: rgba(121, 189, 228, 0.726);
+ }
+
+ .log-out{
+    position: absolute;   /* MAKE (log-out) OUT OF LIST OF (ul) IN LISTING*/
+    bottom: 0;           /* MAKE IT IN THE BOTTOM OF (ul)*/
+    width: 100%;           /* RESTOR (width - CANCED DUO TO abslute) TO 100% OF (div)*/
+
+ }
+
+ .log-out a{        /* WORK ON (a) ONLY NOT IN WHOLE (log-out)*/
+        background-color: red;
+
+ }
+
+
+ /* WORK ON WHOLE (icons) */
+  i { /* TREATED AS THE (TEXT) */
+    font-size: 30px;
+  }
+
+
+  /* ------------------------- PART TOW ----------------------  */
+
+  .con{
+    width: 100%;      /* 100% OF HIS FATHER (div) */
+    margin: 10px; /* SPACE AROUND IT */
+
+  }
+  /*   FISRT   = TITLE    */
+
+.title{     /* BOTH NAME AND ICON */
+    background-color: rgb(18, 121, 98);
+    padding: 10px;                           /* SPACE AROUND IT*/
+    display: flex ;                          /* MAKE ITS CONTANT (NAME + ICON) IN SAME LINE */
+    align-items: center;                     /* MAKE THEM IN CENTER OF Y */
+    justify-content: space-between;          /* SPACE BETWEEN THEM | AS MUCH AS POSSIBLE */
+ /* (gab) => SPACE BY NUMBER | (just... space) => SPACE AS MUCH AS POSSIBLE AND SEND TO MARGINS*/
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+
+  /*   SECOND   = SQUERS BELOW TITLE    */
+
+
+.data{
+    background-color: rgb(1, 2, 2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;   /* WHEN THERE IS NO ENOUGH SPACE THEY WILL WRAP IN NEXT LINE */
+    gap: 10px;
+}
+
+.box{
+    background-color: rgb(13, 49, 104);
+    flex-grow: 1;           /* FILL THE EMPTY OR EXTRA SPACE */
+    height: 150px;
+    flex-basis: 150px ;     /* BETTER THAN (wight) IN (Flex) */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+    /* (s. around) => PUSH ITEMS INSIDE | (s. Between) => PUSH ITEMS OUTSIDE*/
+}
+.box{
+    font-size: 18px;
+}
+
+.da{
+    align-items: center;
+}
+
+
+
+
+/*---------------- WORK ON TABLE--------------*/
+table{
+    width: 100%;             /* 1005 OF HIS FATHER */
+    text-align: center;      /* TEXT */
+    border-spacing: 8px;     /* SPACES BETWEEN CELLS*/
+    font-size: 14px;
+}
+/* WORK ON TABLE AND COLOMN */
+
+td, th{
+    background-color: rgb(6, 48, 49);
+    width: 40px;
+    border-radius: 8px;
+    padding: 15px 0;
+}
+ th{
+    background-color: rgb(5, 5, 53);
+}
+
+table span{
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.pr{
+    background-color: brown;
+}
+
+.co{
+background-color:green;
+}
