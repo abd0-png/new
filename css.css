@@ -77,7 +77,7 @@ ul li a{                /* SPAPCAFIC ON (LINKS) TO MAKE THEM ALL THE EREA*/
     gap: 40px ;            /* SPACE BETWEEN THE TOW OF (a)*/
     transition: 0.5s;
 } 
-ul li a:hover, a:active  .box:hover ,td:active {                /* WHEN I PRESS*/
+ul li a:hover, a:active  .box:hover ,td:active, td:hover {                /* WHEN I PRESS*/
  background-color: rgba(255, 255, 255, 0.425);}
 
  .a1{
